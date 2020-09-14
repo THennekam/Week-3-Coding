@@ -1,0 +1,30 @@
+<html>
+<head>
+</head>
+<body bgcolor="red">
+<body>
+    <script>
+    //Thymo Hennekam, Software Developer, Da Vinci College Dordrecht
+            alert("Welkom bij deze pizzaservice die niks bezorgd. Wat voor soort pizza wilt u? Er zijn drie varianten: small, medium en large. In dezelfde volgorde zijn de prijzen $3, $5 en $7."); //simpele popup die een vraag stelt
+            const small = 3.00;
+            const medium = 5.00;
+            const large = 7.00; //variabele voor elk pizzaformaat die je als eerst invoert
+
+            var aantalSmall;
+            var aantalMedium;
+            var aantalLarge;
+
+            aantalSmall = prompt("Hoeveel small pizza's wilt u? ($3 per stuk)");
+            aantalMedium = prompt("Hoeveel medium pizza's wilt u? ($5 per stuk)");
+            aantalLarge = prompt("Hoeveel large pizza's wilt u? ($7 per stuk)"); //prompt om je hoeveelheid in te voeren
+
+            strSmall = small * aantalSmall
+            strMedium = medium * aantalMedium
+            strLarge = large * aantalLarge
+            strTot = small * aantalSmall + medium * aantalMedium + large * aantalLarge; //strijgj
+
+            document.write("<h1>" + "Dus uw bestelling is " + "<br>" + aantalSmall + " small pizza('s) voor $" + strSmall + ", " + "<br>" + aantalMedium + " medium pizza('s) voor $" + strMedium + "<br>" + aantalLarge + " large pizza('s) voor $" + strLarge + "<br>" + "Dat is dan $" + strTot + "." + "<br>" + "Alvast eet smakelijk!" + "</h1>"); //eindberekening
+            
+    </script>
+</body>
+</html>
